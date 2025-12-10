@@ -22,7 +22,7 @@ mod sealed {
 /// This trait is sealed and cannot be implemented outside of this crate.
 pub trait RingBuf: sealed::Sealed {
     /// Buffer type returned by this ring.
-    type Buffer<'a>:
+    type Buffer<'a>
     where
         Self: 'a;
 

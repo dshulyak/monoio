@@ -16,9 +16,7 @@ use lifecycle::{Lifecycle, MultishotPollResult};
 use super::{
     op::{CompletionMeta, Op, OpAble},
     util::timespec,
-    Driver,
-    Inner,
-    CURRENT,
+    Driver, Inner, CURRENT,
 };
 use crate::utils::slab::Slab;
 

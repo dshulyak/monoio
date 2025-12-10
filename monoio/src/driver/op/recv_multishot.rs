@@ -6,9 +6,9 @@ use std::io;
 use io_uring::{opcode, types};
 
 use super::{super::shared_fd::SharedFd, OpAble};
+use crate::buf::RecvMsgParser;
 #[cfg(any(feature = "legacy", feature = "poll-io"))]
 use crate::driver::ready::Direction;
-use crate::buf::RecvMsgParser;
 
 /// Multishot recv operation for connected sockets.
 pub(crate) struct RecvMultishotOp {
